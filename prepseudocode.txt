@@ -1,0 +1,18 @@
+box inputs: (constructors?)
+input price
+input amount
+input category
+
+data calculations here:
+make calculations for graphs
+calculate percentages based on price and/or amounts 
+if statements to determine which messages to output (return/send strings)
+
+simulation:
+text based retro?
+for each day, week, or other passage of time{
+add funding
+consume by set amounts (random preferred)
+speed/progress bonuses
+hinder progress w/ a lack of resources
+}
