@@ -14,6 +14,6 @@ text based retro?
 for each day, week, or other passage of time{
 add funding
 consume by set amounts (random preferred)
-speed/progress bonuses
+speed/progress bonuses (if more than one or large amounts consumed)
 hinder progress w/ a lack of resources
 }
