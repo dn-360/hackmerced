@@ -14,8 +14,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-
+    <!--NEED TO COME UP WITH A STYLE-->
     <style>
+    
+    .mobile-only{
+        display:none;
+    }
 
     .container img{
         width: 100%;
@@ -33,6 +37,44 @@
         display: table;
         clear: both;
     }
+    .resource{
+        font-family: "";
+        color: black;
+        font-weight: normal;
+    }
+
+    .mobile-spaced{
+            margin-bottom: 0;
+    }
+        
+        .large-spaced{
+            margin-top: 50px;
+        }
+    @media screen and (max-width: 768px){
+            .mobile-only{
+                display: block;
+            }
+            .mobile-row{
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+            .mobile-spaced{
+                margin-bottom:15px;
+            }
+            .large-spaced{
+                margin-top:0;
+            }
+    }
+
+    .outlined{
+        border: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 1px;
+
+    }
     </style>
 </head>
 
@@ -41,7 +83,7 @@
         <h1> Heading </h1> <!--INSERT APPLICATION NAME-->
         <p> Paragraph </p><!--INSERT WORDS-->
         
-        <main>
+        <main middle = "main">
             <div class = "container">
                 <div class = "row">
                     <div class = "column">
@@ -62,12 +104,12 @@
                                 <option None = "none">None</option>
                                 <option option1 = "food">Food</option> <!--PLACEHOLDERS-->>
                                 <option option2 = "material">Material</option>
-                    </select> <!--  <div category = "category_area"></td>-->
+                    </select> 
                     </div>
                 </div>
             
             <br></br>
-                <button onclick = "clickAddRow()"><img src = "/assets/pfpurple.png"></button>
+                <button onclick = "clickAddRow()" id = "addRow"><img src = "/assets/pfpurple.png"></button>
             <br></br>
                 <button onclick = "clickAddMonth()">Add Month</button>
                     <div quantity = "addMonth_area"></div>
