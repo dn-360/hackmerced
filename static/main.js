@@ -1,3 +1,9 @@
+function clickAddRow(){
+    $.get("/addRow"),{},function(response){
+        $("/assets/pfpurple.png").html(display);
+    }
+}
+
 function clickAddMonth(){
     $.get("/addMonth",{},function(response){
         $("#addMonth-area").html(display);
