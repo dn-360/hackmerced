@@ -1,4 +1,5 @@
 box inputs: (constructors?)
+input color?
 input price
 input amount
 input category
