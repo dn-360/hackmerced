@@ -44,9 +44,15 @@
 }
     </script>
     <style>
-
+    #background {
+        background-image: url('assets/background1.png'), url('assets/background2.png'), url('assets/background3.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+    }
  
     .body {
+        background-image: url('assets/background1.png'), url('assets/background2.png'), url('assets/background3.png');
   		background-color: lightblue;  
         align-content: center;
 	}
@@ -134,7 +140,7 @@
             </div>
         </div>
         <p id="demo"></p>
-        <audio id="myaudio" controls autoplay src="audio/music.mp3" type="audio/mpeg">
+        <audio id="myaudio" controls autoplay src="assets/untitled1.mp3" type="audio/mpeg">
         </audio>
         <script type="text/javascript">
         var sounds = new Array();
